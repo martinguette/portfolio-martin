@@ -1,8 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
 import Card from '../components/Card.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-  <main></main>
+  <main>
+    <section class="w-full mx-auto lg:w-[740px] py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+        Hey, soy Martin Guette <div class="flex justify-center items-center">
+          <a
+            class="flex justify-center items-center"
+            href="https://www.linkedin.com/in/martin-guette/"
+            target="_blank"
+            rel="noopener"
+          >
+            <Badge>Disponible para trabajar</Badge>
+          </a>
+        </div>
+      </h1>
+      <h2 class="text-xl opacity-80">
+        +1 año de experiencia. Desarrollador Web.
+      </h2>
+    </section>
+  </main>
 </Layout>

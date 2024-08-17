@@ -1,0 +1,61 @@
+---
+import CSSIcon from './icons/CSS.astro';
+import HTMLIcon from './icons/HTML.astro';
+import JavascriptIcon from './icons/JavaScript.astro';
+
+const TAGS = {
+  HTML: {
+    name: 'HTML',
+    class: 'bg-red-500/60 text-white',
+    icon: HTMLIcon,
+  },
+  CSS: {
+    name: 'CSS',
+    class: 'bg-blue-500/60 text-white',
+    icon: CSSIcon,
+  },
+  JAVASCRIPT: {
+    name: 'JavaScript',
+    class: 'bg-yellow-500/60 text-white',
+    icon: JavascriptIcon,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: 'Dr. Miguel Gómez - Ginecólogo Oncólogo sitio web',
+    description:
+      'Dr. Miguel Gómez, ginecólogo-oncólogo con más de 20 años de experiencia en Santa Marta y Barranquilla. Especializado en tratamiento integral del cáncer ginecológico.',
+    link: 'https://doctormiguelgomez.com/',
+    github: 'https://github.com/martinchuck/doctor_miguel_gomez',
+    image: '/public/projects/proyecto_dr_miguel_screenshot.webp',
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, link, github, image, tags }) => (
+    <article>
+      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul class="flex gap-x-2 flex-row mb-2">
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+            >
+              <tag.icon class="size-4" />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        class="rounded shadow-2xl shadow-white/10"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
+}

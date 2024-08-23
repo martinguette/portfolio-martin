@@ -26,7 +26,7 @@ import Projects from '../components/Projects.astro';
         alt="Martin Guette photo"
       />
       <h1
-        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+        class="text-gray-900 dark:text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
         Hey, soy Martin Guette <div class="flex justify-center items-center">
           <a
@@ -41,14 +41,20 @@ import Projects from '../components/Projects.astro';
       </h1>
       <h2 class="text-xl lg:text-2xl text-balance max-w-[700px]">
         <span>+1 año de experiencia.</span>
-        <span class="text-yellow-200/90"> Desarrollador Web. </span>
-        <span class="text-red-200/90"> De Santa Marta, Colombia.</span>
-        <span class="text-sky-200"
+        <span class="text-yellow-800 dark:text-yellow-200">
+          Desarrollador Web.
+        </span>
+        <span class="text-red-800 dark:text-red-200">
+          De Santa Marta, Colombia.</span
+        >
+        <span class="text-sky-800 dark:text-sky-200"
           >Especializado en crear aplicaciones únicas.</span
         >
       </h2>
-
-      <nav class="flex gap-4 mt-8 flex-wrap">
+      <nav class="flex
+          gap-4
+          mt-8
+          flex-wrap">
         <SocialPill href="https://www.linkedin.com/in/martin-guette/">
           <LinkedInIcon class="size-4 md:size-6" />
           LinkedIn

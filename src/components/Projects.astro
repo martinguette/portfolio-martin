@@ -13,37 +13,37 @@ import LinkButton from '@/components/LinkButton.astro';
 const TAGS = {
   HTML: {
     name: 'HTML',
-    class: 'bg-red-500/60 text-white',
+    class: 'bg-white/5 text-white',
     icon: HTMLIcon,
   },
   CSS: {
     name: 'CSS',
-    class: 'bg-blue-500/60 text-white',
+    class: 'bg-white/5 text-white',
     icon: CSSIcon,
   },
   JAVASCRIPT: {
     name: 'JavaScript',
-    class: 'bg-yellow-500/60 text-white',
+    class: 'bg-white/5 text-white',
     icon: JavascriptIcon,
   },
   REACTJS: {
     name: 'ReactJS',
-    class: 'bg-yellow-500/60 text-white',
+    class: 'bg-white/5 text-white',
     icon: ReactIcon,
   },
   POSTGRESQL: {
     name: 'PostgreSQL',
-    class: 'bg-blue-500/60 text-white',
+    class: 'bg-white/5 text-white',
     icon: PostgresSQLIcon,
   },
   DJANGO: {
     name: 'Django',
-    class: 'bg-green-500/60 text-white',
+    class: 'bg-white/5 text-white',
     icon: DjangoIcon,
   },
   MATERIALUI: {
     name: 'MaterialUI',
-    class: 'bg-blue-500/60 text-white',
+    class: 'bg-white/5 text-white',
     icon: MaterialUIIcon,
   },
 };
@@ -83,7 +83,7 @@ const PROJECTS = [
           {tags.map((tag) => (
             <li>
               <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-2 px-2 border border dark:border-white/10 border-gray-300`}
               >
                 <tag.icon class="size-4" />
                 {tag.name}

@@ -1,7 +1,10 @@
 ---
 import CSSIcon from './icons/CSS.astro';
+import GitHubIcon from './icons/GitHub.astro';
 import HTMLIcon from './icons/HTML.astro';
 import JavascriptIcon from './icons/JavaScript.astro';
+import WebIcon from './icons/Web.astro';
+import LinkButton from '@/components/LinkButton.astro';
 
 const TAGS = {
   HTML: {
@@ -35,7 +38,7 @@ const PROJECTS = [
 ---
 
 {
-  PROJECTS.map(({ title, description, image, tags }) => (
+  PROJECTS.map(({ title, description, image, tags, link, github }) => (
     <article>
       <h3 class="text-2xl font-semibold text-yellow-800 dark:text-yellow-200 mb-2">
         {title}
@@ -45,7 +48,7 @@ const PROJECTS = [
         {tags.map((tag) => (
           <li>
             <span
-              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10`}
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
             >
               <tag.icon class="size-4" />
               {tag.name}
@@ -59,6 +62,16 @@ const PROJECTS = [
         src={image}
         alt={`Captura de pantalla del proyecto ${image}`}
       />
+      <footer class="flex gap-x-4">
+        <LinkButton href={github}>
+          <GitHubIcon class="size-6" />
+          Ver código fuente
+        </LinkButton>
+        <LinkButton href={link}>
+          <WebIcon />
+          Ir al sitio web
+        </LinkButton>
+      </footer>
     </article>
   ))
 }

@@ -9,6 +9,8 @@ import PostgresSQLIcon from './icons/PostgreSQL.astro';
 import DjangoIcon from './icons/Django.astro';
 import MaterialUIIcon from './icons/MaterialUI.astro';
 import LinkButton from '@/components/LinkButton.astro';
+import WordpressIcon from './icons/Wordpress.astro';
+import ElementorIcon from './icons/Elementor.astro';
 
 const TAGS = {
   HTML: {
@@ -46,6 +48,16 @@ const TAGS = {
     class: 'bg-white/5 text-white',
     icon: MaterialUIIcon,
   },
+  WORDPRESS: {
+    name: 'Wordpress',
+    class: 'bg-white/5 text-white',
+    icon: WordpressIcon,
+  },
+  ELEMENTOR: {
+    name: 'Elementor',
+    class: 'bg-white/5 text-white',
+    icon: ElementorIcon,
+  },
 };
 
 const PROJECTS = [
@@ -67,6 +79,22 @@ const PROJECTS = [
     link: '#',
     image: '/creab10_screenshot_1.webp',
     tags: [TAGS.REACTJS, TAGS.MATERIALUI, TAGS.DJANGO, TAGS.POSTGRESQL],
+  },
+  {
+    title: 'Acreditación Ingeniería de Sistemas - Universidad del Magdalena',
+    description:
+      'La página del Programa de Ingeniería de Sistemas de la Universidad del Magdalena ofrece una visita virtual de su proceso de acreditación de alta calidad, presentando información sobre el programa, infraestructura, acreditación, galería de imágenes y contenidos creados por estudiantes y docentes. Creado desde cero con Wordpress y Elementor.',
+    link: 'https://bloque10.unimagdalena.edu.co/acreditacion-ingenieria-de-sistemas/',
+    image: '/sistemas_screenshot.webp',
+    tags: [TAGS.WORDPRESS, TAGS.ELEMENTOR],
+  },
+  {
+    title: 'Acreditación Cine y Audiovisuales - Universidad del Magdalena',
+    description:
+      'La página del Programa de Cine y Audiovisuales de la Universidad del Magdalena ofrece una visita virtual de su proceso de acreditación de alta calidad, presentando información sobre el programa, infraestructura, acreditación, galería de imágenes y contenidos creados por estudiantes y docentes. Creado desde cero con Wordpress y Elementor.',
+    link: 'https://bloque10.unimagdalena.edu.co/acreditacion-cine-y-audiovisuales/',
+    image: '/cine_screenshot.webp',
+    tags: [TAGS.WORDPRESS, TAGS.ELEMENTOR],
   },
 ];
 ---

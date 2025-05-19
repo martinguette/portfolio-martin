@@ -12,6 +12,7 @@ import LinkButton from '@/components/LinkButton.astro';
 import WordpressIcon from './icons/Wordpress.astro';
 import ElementorIcon from './icons/Elementor.astro';
 import SupabaseIcon from './icons/Supabase.astro';
+import ShadcnIcon from './icons/Shadcn.astro';
 
 const TAGS = {
   HTML: {
@@ -64,6 +65,11 @@ const TAGS = {
     class: 'bg-white/5 text-white',
     icon: SupabaseIcon,
   },
+  SHADCN: {
+    name: 'shadcn/ui',
+    class: 'bg-white/5 text-white',
+    icon: ShadcnIcon,
+  },
 };
 
 const PROJECTS = [
@@ -74,7 +80,7 @@ const PROJECTS = [
     link: '#',
     github: '#',
     image: '/dr_miguel_screenshot.webp',
-    tags: [TAGS.REACTJS, TAGS.SUPABASE],
+    tags: [TAGS.REACTJS, TAGS.SUPABASE, TAGS.SHADCN],
   },
   {
     title: 'Dr. Miguel Gómez - Ginecólogo Oncólogo sitio web',

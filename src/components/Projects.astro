@@ -11,6 +11,7 @@ import MaterialUIIcon from './icons/MaterialUI.astro';
 import LinkButton from '@/components/LinkButton.astro';
 import WordpressIcon from './icons/Wordpress.astro';
 import ElementorIcon from './icons/Elementor.astro';
+import SupabaseIcon from './icons/Supabase.astro';
 
 const TAGS = {
   HTML: {
@@ -58,9 +59,23 @@ const TAGS = {
     class: 'bg-white/5 text-white',
     icon: ElementorIcon,
   },
+  SUPABASE: {
+    name: 'Supabase',
+    class: 'bg-white/5 text-white',
+    icon: SupabaseIcon,
+  },
 };
 
 const PROJECTS = [
+  {
+    title: 'CineCollab',
+    description:
+      'CineCollab es una aplicación web que permite a los usuarios buscar películas y series, ver sus detalles (pósters, sinopsis, tráilers) y crear watchlists colaborativas que pueden compartir con amigos. La característica principal es la colaboración en tiempo real para agregar, eliminar o editar elementos en listas compartidas.',
+    link: '#',
+    github: '#',
+    image: '/dr_miguel_screenshot.webp',
+    tags: [TAGS.REACTJS, TAGS.SUPABASE],
+  },
   {
     title: 'Dr. Miguel Gómez - Ginecólogo Oncólogo sitio web',
     description:

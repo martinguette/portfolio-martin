@@ -150,12 +150,12 @@ const PROJECTS = [
           {github && (
             <LinkButton href={github}>
               <GitHubIcon class="size-6" />
-              Ver código fuente
+              {title === 'CineCollab' ? 'Pronto' : 'Ver código fuente'}
             </LinkButton>
           )}
           <LinkButton href={link}>
             <WebIcon />
-            Ir al sitio web
+            {title === 'CineCollab' ? 'Pronto' : 'Ir al sitio web'}
           </LinkButton>
         </footer>
       </article>

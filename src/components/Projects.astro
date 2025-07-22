@@ -14,6 +14,8 @@ import ElementorIcon from './icons/Elementor.astro';
 import SupabaseIcon from './icons/Supabase.astro';
 import ShadcnIcon from './icons/Shadcn.astro';
 import TypeScriptIcon from './icons/TypeScript.astro';
+import Astroicon from './icons/Astroicon.astro';
+import TailwindIcon from './icons/Tailwind.astro';
 
 const TAGS = {
   HTML: {
@@ -76,9 +78,27 @@ const TAGS = {
     class: 'bg-white/5 text-white',
     icon: TypeScriptIcon,
   },
+  ASTRO: {
+    name: 'Astro',
+    class: 'bg-white/5 text-white',
+    icon: Astroicon,
+  },
+  TAILWIND: {
+    name: 'TailwindCSS',
+    class: 'bg-white/5 text-white',
+    icon: TailwindIcon,
+  },
 };
 
 const PROJECTS = [
+  {
+    title: 'Martín Guette - Especialista en Riego Agrícola Sitio web',
+    description:
+      'Especialista en riego agrícola con más de 30 años de experiencia diseñando e implementando soluciones de riego en la región Caribe de Colombia. Su experiencia abarca sistemas de riego por aspersión, goteo, pozos profundos y soluciones personalizadas para enfrentar la sequía en cultivos y pastoreo. Creado desde cero con Astro, TailwindCSS y JavaScript',
+    link: 'https://bloque10.unimagdalena.edu.co/acreditacion-cine-y-audiovisuales/',
+    image: '/martinguette_screenshot.webp',
+    tags: [TAGS.ASTRO, TAGS.TAILWIND, TAGS.JAVASCRIPT],
+  },
   {
     title: 'La Caverna - Cine alternativo en Santa Marta',
     description:

@@ -1,6 +1,6 @@
 ---
+// import GitHubIcon from './icons/GitHub.astro';
 import CSSIcon from './icons/CSS.astro';
-import GitHubIcon from './icons/GitHub.astro';
 import HTMLIcon from './icons/HTML.astro';
 import JavascriptIcon from './icons/JavaScript.astro';
 import WebIcon from './icons/Web.astro';
@@ -178,12 +178,12 @@ const PROJECTS = [
           alt={`Captura de pantalla del proyecto ${image}`}
         />
         <footer class="flex gap-x-4 items-end justify-start mt-4">
-          {github && (
+          {/* {github && (
             <LinkButton href={github}>
               <GitHubIcon class="size-6" />
               {title === 'CineCollab' ? 'Pronto' : 'Ver código fuente'}
             </LinkButton>
-          )}
+          )} */}
           <LinkButton href={link}>
             <WebIcon />
             {title === 'CineCollab' ? 'Pronto' : 'Ir al sitio web'}
